@@ -1,0 +1,54 @@
+[ober@ober-k56cb RepoNameDenisForMerge]$ git push
+Username for 'https://github.com': OberDen
+Password for 'https://OberDen@github.com': 
+To https://github.com/OberDen/RepoNameDenisForMerge.git
+ ! [rejected]        main -> main (fetch first)
+error: не удалось отправить некоторые ссылки в «https://github.com/OberDen/RepoNameDenisForMerge.git»
+подсказка: Обновления были отклонены, так как внешний репозиторий содержит
+подсказка: изменения, которых у вас нет в вашем локальном репозитории.
+подсказка: Обычно, это связанно с тем, что кто-то уже отправил изменения в 
+подсказка: то же место. Перед повторной отправкой ваших изменений, вам нужно
+подсказка: забрать и слить изменения из внешнего репозитория себе
+подсказка: (например, с помощью «git pull …»).
+подсказка: Для дополнительной информации, смотрите «Note about fast-forwards»
+подсказка: в «git push --help».
+
+Выполнил команду git pull. Получил следующую ошибку:
+
+[ober@ober-k56cb RepoNameDenisForMerge]$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Распаковка объектов: 100% (3/3), 618 байтов | 618.00 КиБ/с, готово.
+Из https://github.com/OberDen/RepoNameDenisForMerge
+ * [новая ветка]     main       -> origin/main
+подсказка: Pulling without specifying how to reconcile divergent branches is
+подсказка: discouraged. You can squelch this message by running one of the following
+подсказка: commands sometime before your next pull:
+подсказка: 
+подсказка:   git config pull.rebase false  # merge (the default strategy)
+подсказка:   git config pull.rebase true   # rebase
+подсказка:   git config pull.ff only       # fast-forward only
+подсказка: 
+подсказка: You can replace "git config" with "git config --global" to set a default
+подсказка: preference for all repositories. You can also pass --rebase, --no-rebase,
+подсказка: or --ff-only on the command line to override the configured default per
+подсказка: invocation.
+fatal: отказ слияния несвязанных историй изменений
+
+Выполнил команду git pull -r, git push
+
+[ober@ober-k56cb RepoNameDenisForMerge]$ git pull -r
+Successfully rebased and updated refs/heads/main.
+[ober@ober-k56cb RepoNameDenisForMerge]$ git push
+Username for 'https://github.com': OberDen
+Password for 'https://OberDen@github.com': 
+Перечисление объектов: 4, готово.
+Подсчет объектов: 100% (4/4), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (2/2), готово.
+Запись объектов: 100% (3/3), 307 байтов | 307.00 КиБ/с, готово.
+Всего 3 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To https://github.com/OberDen/RepoNameDenisForMerge.git
+   d5c8aef..540e741  main -> main
+
